@@ -1,4 +1,4 @@
-
+/* Стили к главной странице-Студия */
 :root {
     --main-color-text: #757575;
     --text-title: #212121;
@@ -7,8 +7,11 @@
 }
 
 body {
-    background-color: #E5E5E5;
     color: var(--main-color-text);
+    background-color: #E5E5E5;
+    font-family: "Roboto", Tahoma, sans-serif;
+    font-style: 400;
+    Letter-spacing: 3%;
  }
 .list {
     list-style: none;
@@ -17,27 +20,94 @@ body {
  /* logo */
 .logo {
     font-family: 'Raleway';
-    font-weight: 700;
+    font-style: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     Letter-spacing: 3%;
     color: var(--accent-color); 
+    text-decoration: none;
 }
-
 .logo-dack { color: var(--text-title); }
 .logo-light { color: var(--secondary-color); }
 
 /* site navigation */
-.site-nav>a { color: var(--text-title); }
-.site-nav a:hover,
-.site-nav a:focus { color: var(--accent-color); }
-.authorization-nav { color: var(--main-color-text) }
+.site-nav>a { 
+    color: var(--text-title); 
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.14;
+    Letter-spacing: 2%;
 
+}
+
+.site-nav a:hover,
+.site-nav a:focus { 
+    color: var(--accent-color); 
+}
+.authorization-nav { 
+    color: var(--main-color-text); 
+    
+}
+.auth-nav, .site-nav-decor {
+    text-decoration: none;
+}
 /* section hero */
-.hero-title { color: var(--secondary-color); }
-.hero-button { color: var(--secondary-color); }
+.hero-title { 
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+    vertical-align: top;
+    Letter-spacing: 6%;
+
+
+   
+}
+.hero-button { 
+    color: var(--secondary-color); 
+    background-color: var(--accent-color);
+    font-family: Roboto;
+    font-style: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    vertical-align: center;
+    Letter-spacing: 6%;
+}
 
 /* sections */ 
-.section-title {color: var(--text-title);}
-.title-list { color: var(--text-title); }
+.section-title {
+    color: var(--text-title);
+    font-style: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    vertical-align: top;
+   
+}
+
+.title-list { 
+    color: var(--text-title); 
+    font-style: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    vertical-align: top;
+    
+}
+
+.section-list {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    vertical-align: top;
+    
+
+}
+/* Футер */
+
+
+
+/* Стили к странице Портфолио */
 
