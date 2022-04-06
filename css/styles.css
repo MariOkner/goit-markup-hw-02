@@ -1,113 +1,187 @@
-/* Стили к главной странице-Студия */
+/* -----------Стили к главной странице-Студия-------- */
 :root {
-    --main-color-text: #757575;
-    --text-title: #212121;
+    --main-text-color: #757575;
+    --title-text-color: #212121;
     --accent-color: #2196F3;
-    --secondary-color: #FFFFFF;
+    --secondary-text-color: #FFFFFF;
 }
 
 body {
-    color: var(--main-color-text);
-    background-color: #E5E5E5;
+    color: var(--main-text-color);
     font-family: "Roboto", Tahoma, sans-serif;
-    font-style: 400;
-    Letter-spacing: 3%;
+    letter-spacing: 0.03em;
  }
 .list {
     list-style: none;
 }
+.deco a {
+    text-decoration: none;
+}
 
  /* logo */
 .logo {
+    color: var(--accent-color);
     font-family: 'Raleway';
-    font-style: 700;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
-    Letter-spacing: 3%;
-    color: var(--accent-color); 
+    line-height: 1.19;
     text-decoration: none;
 }
-.logo-dack { color: var(--text-title); }
-.logo-light { color: var(--secondary-color); }
 
-/* site navigation */
-.site-nav>a { 
-    color: var(--text-title); 
-    font-family: Roboto;
+.logo-dack { color: var(--title-text-color); }
+.logo-light { color: var(--secondary-text-color); }
+
+/*__________________ header_________________ */
+.header {
+    background-color: #FFFFFF;
+}
+.header-link, .header-link-nav { 
+    color: var(--title-text-color); 
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    Letter-spacing: 2%;
-
+    Letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus { 
+.header-link:hover,
+.header-link:focus { 
     color: var(--accent-color); 
 }
-.authorization-nav { 
-    color: var(--main-color-text); 
-    
+
+.header-link-nav { 
+    font-style: normal;
+    color: var(--main-text-color); 
 }
-.auth-nav, .site-nav-decor {
-    text-decoration: none;
+.header-link-nav:hover,
+.header-link-nav:focus {
+    color: var(--accent-color);
 }
-/* section hero */
+
+/*------------------- hero---------------------- */
+.hero {
+    background-color: #2F303A;
+}
 .hero-title { 
-    color: var(--secondary-color);
-    font-family: Roboto;
+    color: var(--secondary-text-color);
+    font-weight: 900;
     font-size: 44px;
-    line-height: 1.37;
+    line-height: 1.36;
     text-align: center;
-    vertical-align: top;
-    Letter-spacing: 6%;
-
-
-   
+    Letter-spacing: 0.06em;
+    text-transform: uppercase;  
 }
 .hero-button { 
-    color: var(--secondary-color); 
+    color: var(--secondary-text-color); 
     background-color: var(--accent-color);
-    font-family: Roboto;
-    font-style: 700;
+    font-family: inherit;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
+    align-items: center;
     text-align: center;
-    vertical-align: center;
-    Letter-spacing: 6%;
+    letter-spacing: 0.06em;
 }
 
-/* sections */ 
-.section-title {
-    color: var(--text-title);
-    font-style: 700;
+/* --------------------- features --------------*/ 
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.features-list-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-list-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* ------------------------work--------------------- */
+.work-title, .team-title{
+    color: var(--title-text-color);
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    vertical-align: top;
-   
 }
 
-.title-list { 
-    color: var(--text-title); 
-    font-style: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: left;
-    vertical-align: top;
-    
+/* -----------------------team----------------------- */
+.team {
+    background: #F5F4FA;
 }
 
-.section-list {
+.team-list-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;  
+    text-align: center;
+}
+
+.team-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center; 
+}
+
+/*------------------------- Футер --------------------*/
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-address {
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    text-align: left;
-    vertical-align: top;
-    
-
+    color: var(--secondary-text-color);
 }
-/* Футер */
 
 
+/*---------------- Стили к странице Портфолио----------- */
+.filter-button {
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+}
 
-/* Стили к странице Портфолио */
 
+.pictures-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.pictures-text {
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
