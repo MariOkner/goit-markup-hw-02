@@ -1,4 +1,4 @@
-/* -----------Стили к главной странице-Студия-------- */
+/* ------------------------------------Styles main page------------------------------------*/
 :root {
     --main-text-color: #757575;
     --title-text-color: #212121;
@@ -18,7 +18,7 @@ body {
     text-decoration: none;
 }
 
- /* logo */
+ /*------------------------------------Logo------------------------------------*/
 .logo {
     color: var(--accent-color);
     font-family: 'Raleway';
@@ -31,10 +31,15 @@ body {
 .logo-dack { color: var(--title-text-color); }
 .logo-light { color: var(--secondary-text-color); }
 
-/*__________________ header_________________ */
+/*------------------------------------Header------------------------------------*/
 .header {
     background-color: #FFFFFF;
 }
+
+.header-list, .header-link.current {
+    color: var(--accent-color);
+}
+
 .header-link, .header-link-nav { 
     color: var(--title-text-color); 
     font-weight: 500;
@@ -57,7 +62,7 @@ body {
     color: var(--accent-color);
 }
 
-/*------------------- hero---------------------- */
+/*------------------------------------Hero------------------------------------ */
 .hero {
     background-color: #2F303A;
 }
@@ -80,10 +85,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
-/* --------------------- features --------------*/ 
-
+/*------------------------------------Features------------------------------------*/ 
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -106,12 +111,11 @@ body {
 }
 
 .features-list-text{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 
-/* ------------------------work--------------------- */
+/*------------------------------------Work------------------------------------*/
 .work-title, .team-title{
     color: var(--title-text-color);
     font-weight: 700;
@@ -120,7 +124,7 @@ body {
     text-align: center;
 }
 
-/* -----------------------team----------------------- */
+/*------------------------------------Team------------------------------------*/
 .team {
     background: #F5F4FA;
 }
@@ -134,18 +138,17 @@ body {
 }
 
 .team-list-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center; 
 }
 
-/*------------------------- Футер --------------------*/
+/*------------------------------------Footer------------------------------------*/
 .footer {
     background-color: #2F303A;
 }
 
-.footer-address {
+.footer-address, .footer-link-nav {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -153,8 +156,15 @@ body {
     color: var(--secondary-text-color);
 }
 
+.footer-link-nav {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-link-nav:hover,
+.footer-link-nav:focus {
+    color: var(--accent-color);
+}
 
-/*---------------- Стили к странице Портфолио----------- */
+/*------------------------------------Styles page portfolio------------------------------------*/
 .filter-button {
     color: var(--title-text-color);
     font-family: inherit;
@@ -163,13 +173,13 @@ body {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
 }
-
 
 .pictures-title {
     color: var(--title-text-color);
@@ -181,7 +191,6 @@ body {
 
 .pictures-text {
     color: var(--main-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
